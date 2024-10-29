@@ -34,12 +34,9 @@ class AvesISP(ABC):
     def bicar(self) -> str: ...
 
 
-class AvesQueVoam(AvesISP, ABC):
+class AvesQueVoam(AvesISP):
     @abstractmethod
     def voar(self) -> str: ...
-
-    @abstractmethod
-    def bicar(self): ...
 
 
 class PapagaioISP(AvesQueVoam):
